@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <form action="https://fom.in.ua/echo" target="_blank" method="post" name="main_form" autocomplete="on">
+                <div class="switch">
+                    <input type="checkbox" id="switch">
+                    <label for="switch" class="registration">
+                        <span class="first">Вход</span>
+                        <span class="second">Регистрация</span>
+                    </label>
+                </div>
+                <div class="form">
+                    <h1>Вход</h1>
+                    <input type="email" name="email" placeholder="Введите E-mail" required>
+                    <input type="password" name="password" placeholder="Пароль" required>
+                </div>
+                <div class="help">
+                    <div class="switch_2">
+                        <input type="checkbox" id="switch_2">
+                        <label for="switch_2">Запомнить меня</label>
+                    </div>
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <input type="submit" value="Войти" class="btn">
+                <div class="flex">
+                    <p>Еще нет аккаунта? </p>
+                    <a href="#">Зарегистрироваться</a>
+                </div>
+                <p>Или войдите через</p>
+                <div class="icons">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="sprite.svg#linkedIn"></use>
+                        </svg>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
